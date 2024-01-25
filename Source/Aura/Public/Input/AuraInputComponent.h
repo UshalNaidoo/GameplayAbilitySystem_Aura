@@ -5,13 +5,13 @@
 #include "CoreMinimal.h"
 #include "EnhancedInputComponent.h"
 #include "AuraInputConfig.h"
-#include "AuraEnhancedInputComponent.generated.h"
+#include "AuraInputComponent.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class AURA_API UAuraEnhancedInputComponent : public UEnhancedInputComponent
+class AURA_API UAuraInputComponent : public UEnhancedInputComponent
 {
 	GENERATED_BODY()
 public:
