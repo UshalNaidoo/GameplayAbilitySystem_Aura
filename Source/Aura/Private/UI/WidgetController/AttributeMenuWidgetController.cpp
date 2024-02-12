@@ -20,6 +20,7 @@ void UAttributeMenuWidgetController::BindCallbacksToDependencies()
 			}
 		);
 	}
+
 	AAuraPlayerState* AuraPlayerState = CastChecked<AAuraPlayerState>(PlayerState);
 	AuraPlayerState->OnAttributePointsChangedDelegate.AddLambda(
 		[this](int32 Points)
