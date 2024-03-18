@@ -28,6 +28,8 @@ public:
 	UPROPERTY()
 	TObjectPtr<USceneComponent> HomingTargetSceneComponent;
 
+	bool IsValidOverlap(AActor* OtherActor);
+	bool bHit = false;
 protected:
 	virtual void BeginPlay() override;
 
@@ -45,9 +47,6 @@ private:
 
 	UPROPERTY(EditDefaultsOnly)
 	float LifeSpan = 15.f;
-
-	bool bHit = false;
-
 
 	UPROPERTY(EditAnywhere)
 	TObjectPtr<UNiagaraSystem> ImpactEffect;
